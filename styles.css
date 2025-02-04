@@ -14,7 +14,7 @@ body {
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    max-width: 1920px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: black;
 }
@@ -61,8 +61,8 @@ header  {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-end;
-    padding: 10px;
+    align-items: center;
+    padding: 0px 160px;
 }
 
 header > ul > li {
@@ -91,26 +91,26 @@ ul {
 .hero-section {
     display: flex;
     flex: 1 1 auto;
-    padding: 60px 10px;
+    padding: 10px 60px 40px 60px;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 2rem;
     
 }
 
 .hero-section > .hero-text {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
     padding-top: 20px;
 }
 
 .hero-section > img {
     display: flex;
     flex: 0 1 auto;
-    min-width: 400px;
-    max-width: 600px;
+    min-width: 200px;
+    max-width: 500px;
     border-radius: 15px;
     padding-top: 20px;
 }
@@ -127,7 +127,7 @@ ul {
 
 .image-cards {
     background-color: white;
-    padding: 60px 0px;
+    padding: 30px 160px;
     
 }
 
@@ -140,24 +140,24 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     gap: 1rem;
-    margin: 20px
+    margin: 0px
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    flex-shrink: 1;
     width: 200px;
+    justify-content: space-between;
 }
 
 .card > img {
     height: 200px;
     width: 200px;
     border-radius: 15px;
-    border: 1px solid #000;
+    border: 3px solid #3882F6;
     object-fit: cover
 }
 
@@ -176,45 +176,58 @@ ul {
 }
 
 
+/* sign-up section */
+.sign-up-section {
+    background-color: white;  
+    padding: 40px 125px;
+}
 
 
+.sign-up-banner  {
+    max-width: 1440px;
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 50px 0px;
+    margin: 10px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-
+.sign-up-text {
+    padding: 10px
+}
 
 
 
 /*button styling*/
-button {
+.button-header, 
+.button-sign-up
+ {
     font-size: 20px;
     background-color: #3882F6;
     color: white;
-    border: 0px;
     transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
     padding: 5px 15px;
     border-radius: 8px;
     align-self: flex-start;
 
 }
 
+.button-header {
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button-sign-up {
+    border: 1px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 button:hover {
     background-color: cornflowerblue;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Footer styling*/
 footer {
